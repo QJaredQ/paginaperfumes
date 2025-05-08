@@ -1,0 +1,112 @@
+main{
+    color: white;
+}
+footer{
+    color: white;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+body{
+   background-image: url(fondo2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.barras{display: none;}
+.desplegable{background: #7ca5ff;}
+ul{
+    display: flex;
+    flex-direction: row;
+}
+ul li{
+    padding: 10px;
+    list-style: none;
+}
+ul li a{  color: rgb(248, 251, 255);
+    text-decoration: none;
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-size: 1.1rem;
+}
+nav ul li:hover{background: #c7baff; }
+@media (max-width: 850px) {
+.barras{
+    background-color: #a693ff;
+    display: block;
+}
+.desplegable{
+    background: none;
+    transform: translate(-100%);
+    transition: 0.5s;
+    font-size: 1.5rem;
+    width: 50%;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+a{
+    padding: 0;
+}
+a{
+    font-size: 1.5rem;
+    padding: 20px 0px 20px 20px;
+    display: block;
+    text-align: center;
+}
+.boton_menu{
+    background-image: url(vectorb.png);
+    background-color: #0b4479;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    background-size: 30px 30px;
+    background-position: center;
+}
+button{
+    margin: 5px;
+    border: none;
+    margin: 10px 10px 10px 10px;
+}
+.abrir_menu{
+    background: rgba(30, 30, 30, 0.6);
+    backdrop-filter: blur(2px);
+    transform: translate(0%);
+    width: 50%;
+    transition: 0.5s;
+}
+.colocar_x{
+    background-image: url(xsinfondo.png);
+    background-color: #1e1e1e;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    background-size: 30px 30px;
+    background-position: center;
+}
+@media (max-width: 500px){
+    .desplegable{
+        width: 100%;
+        height: 100vh;
+        font-size: 1.6rem;
+    }
+}
+}
+
+.titulo{
+    color: rgb(125, 137, 248);
+}
+:is(.desayuno1, .desayuno2, .desayuno3){
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
