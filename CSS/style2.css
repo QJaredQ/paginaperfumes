@@ -19,7 +19,7 @@ body{
 }
 
 .barras{display: none;}
-.desplegable{background: #7ca5ff;}
+.desplegable{background: #f47cff;}
 ul{
     display: flex;
     flex-direction: row;
