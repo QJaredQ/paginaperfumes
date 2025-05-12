@@ -23,6 +23,7 @@ body{
 ul{
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 ul li{
     padding: 10px;
